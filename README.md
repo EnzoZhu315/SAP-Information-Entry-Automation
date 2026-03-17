@@ -39,11 +39,6 @@ Installation:
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/sap-mm01-automation.git
-cd sap-mm01-automation
-Install Python dependencies:
-
-Bash
 pip install pywin32 gspread oauth2client
 Google Apps Script Setup:
 
@@ -58,10 +53,10 @@ To protect your credentials, this project uses Environment Variables. Do not har
 
 Windows (PowerShell)
 PowerShell
-$env:SAP_USER="YourUserName"
-$env:SAP_PASSWORD="YourSecretPassword"
-$env:SAP_SYSTEM_NAME="YourSystemID"
-$env:GS_SHEET_KEY="YourGoogleSheetID"
+env:SAP_USER="YourUserName"
+env:SAP_PASSWORD="YourSecretPassword"
+env:SAP_SYSTEM_NAME="YourSystemID"
+env:GS_SHEET_KEY="YourGoogleSheetID"
 File Structure
 automation.py: The main Python RPA logic.
 
